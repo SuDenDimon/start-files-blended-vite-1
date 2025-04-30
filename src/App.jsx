@@ -8,6 +8,7 @@ import Statistics from './components/Statistics/Statistics';
 
 import article from './data/article';
 import stats from './data/stats';
+import forbes from './data/forbes';
 
 export const App = () => {
   return (
@@ -26,7 +27,7 @@ export const App = () => {
         <Heading title="Task 2 Statistics" top bottom />
         <Statistics title="Main Statistics" stats={stats} />
         <Heading title="Task 3 Forbes list" top bottom />
-        <ForbesList />
+        <ForbesList list={forbes} />
         <Heading title="Task 4 Crypto history" top bottom />
         <CryptoHistory />
       </Container>
